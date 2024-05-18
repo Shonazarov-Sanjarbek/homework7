@@ -1,0 +1,115 @@
+.panda{
+    width: 100%;
+    background: $bg-dark;
+    &__block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;   
+    }
+    &__navbar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 16px;
+    }
+    &__btn{
+        flex: 1;
+        button{
+            min-width: 89px;
+            padding: 24px;
+            background: $bg-btn;
+            transition: .25s;
+            &:hover{
+                background: $bg-sy;
+                span{
+                    color: $bg-dark;
+                }
+            }
+            span{
+                font-size: 18px;
+                font-weight: 800;
+                line-height: 17px;
+                color: $bg-light;
+            }
+            &:active{
+                transform: scale(.9);
+            }
+            
+        }
+    }
+   &__icon{
+    padding: 16px;
+    background: $bg-btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   } 
+   &__wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+   }
+   &__card{
+    width: 360px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    background: $bg-py;
+   }
+   &__img{
+    width: 100%;
+    height: 276px;
+   }
+   &__content{
+    width: 100%;
+    padding: 15px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+   }
+   &__subtitle{
+    width: 100%;
+    height: 35px;
+    p{
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 35px;
+        color: $bg-light;
+    }
+   }
+   &card__img{
+    width: 100%;
+    height: 42px;
+   }
+   &__commment{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    p{
+       font-size: 16px; 
+       font-weight: 800;
+       line-height: 28px;
+       color: $bg-light;
+       &:hover{
+        opacity: .7;
+        cursor: pointer;
+       }
+    }
+   }
+}

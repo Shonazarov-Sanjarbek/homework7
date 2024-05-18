@@ -1,0 +1,92 @@
+.related{
+    width: 100%;
+    height: auto;
+    background: $bg-dark;
+    padding-top: 60px;
+    &__block{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__subtitle{
+        width: 100%;
+        height: 124px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+        p{
+            width: 800px;
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 62px;
+            text-align: center;
+            color: $bg-light;
+        }
+    }
+    &__search{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+    &__inp{
+        width: 460px;
+        height: 100%;
+        padding: 24px 32px;
+        background: inherit;
+        border: 1px solid $bg-gold;
+        outline: none;
+        color: $bg-gold;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 17px;
+    }
+    &__inp::placeholder{
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 17px;
+        color: $bg-gold;
+    }
+    &__btn{
+        @include btn();
+        width: 156px;
+        height: 100%;
+        span{
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 17px;
+        }
+    }
+    &__background{
+        width: 100%;
+        min-height: 942px;
+        background: $bg-dark;
+        overflow: hidden;
+    }
+    &__background__img{      
+        width: 100%;
+        height: 940px;
+        background: url(../../assets/foooter-hero.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        position: absolute;
+        z-index: 11;
+        overflow: hidden;
+    }
+    &__content{
+        width: 100%;
+        height: 290px;
+        background: $bg-sy;
+        position: relative;
+        top: 650px;
+        left: 0;
+        z-index: 2;
+    }
+}
